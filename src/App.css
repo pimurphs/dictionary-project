@@ -39,7 +39,7 @@ body {
 .App h1 {
   font-size: 50px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 2);
+  color: var(--primary-color);
   font-family: "Quicksand", sans-serif;
   text-align: center;
   text-shadow: 0 5px 15px rgb(0 0 0 / 30%);
