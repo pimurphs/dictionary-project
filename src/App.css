@@ -1,5 +1,48 @@
+:root {
+  --primary-color: rgba(255, 255, 255, 2);
+}
+
+@keyframes color {
+  0% {
+    background: #ffb7b2;
+  }
+  20% {
+    background: #f7a49e;
+  }
+  40% {
+    background: #cde2ab;
+  }
+  60% {
+    background: #97d3bd;
+  }
+  80% {
+    background: #aebcf5;
+  }
+  100% {
+    background: #ffb7b2;
+  }
+}
+
+body {
+  max-width: 900px;
+  background: #33cccc; /* Fallback */
+  animation: color 10s infinite linear;
+  padding: 2em;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
 .App-header {
   margin-top: 30px 0;
+}
+
+.App h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 2);
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  text-shadow: 0 5px 15px rgb(0 0 0 / 30%);
 }
 
 .App-logo {
@@ -11,4 +54,10 @@
 .App-footer {
   text-align: center;
   margin: 30px 0;
+  font-family: "Quicksand", sans-serif;
+  color: var(--primary-color);
+}
+
+.App a {
+  color: var(--primary-color);
 }
